@@ -5,12 +5,17 @@ body{
     background-color: #eee; /*لون غامق شوي*/
 }
 
+.menu{
+    display: none;
+}
+
 .header{
     background-color: #fff; /*لون ابيض*/
     padding: 20px 0;
 }
 .header .logo{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;/*التحكم فيهم بشكل عمودي*/
     gap:2px;
 }
@@ -25,6 +30,7 @@ body{
 
 .nav ul{
     display:flex;
+    flex-wrap: wrap;
     gap:16px;
 }
 
@@ -43,6 +49,7 @@ body{
 */
 .auth{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap:10px;
 }
@@ -62,4 +69,15 @@ body{
     color:#fff;
     background-color: var(--mainColor);
     border:2px solid var(--mainColor);
+}
+
+/*media header*/
+@media screen and (max-width:992px){
+    .nav{   /*display : none => don't reserve place , visibility : hidden => reserve place*/
+        display: none; /*تعني لعند 992 ما بتظهر , بعدها بتظهر*/
+    }
+    .menu{
+        display: block;
+        order:2;
+    }
 }

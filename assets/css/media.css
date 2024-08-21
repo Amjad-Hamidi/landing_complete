@@ -1,0 +1,63 @@
+body{
+    background-color: red;
+}
+
+h1{
+    background-color: teal;
+}
+
+/*from zero to 400*/
+@media screen and (min-width:0px) and (max-width:576px){ /*default is : screen , there many types like print*/
+    h1{
+        background-color: blue;
+        /*font-size: 30px;
+        text-align: center;*/
+    }
+}
+
+
+@media screen and (min-width:577px) and (max-width:768px){  /*this is called : media query*/
+    h1{
+        background-color: red;
+        /*font-size: 30px;
+        text-align: center;*/
+    }
+}
+
+
+@media screen and (min-width:769px) and (max-width:992px){  /*this is called : media query*/
+    h1{
+        background-color: orange;
+        /*font-size: 30px;
+        text-align: center;*/
+    }
+}
+
+
+
+@media screen and (min-width:993px) and (max-width:1200px){  /*this is called : media query*/
+    h1{
+        background-color: green;
+        /*font-size: 30px;
+        text-align: center;*/
+    }
+}
+
+@media screen and (min-width:1201px) and (max-width:1400px){  /*this is called : media query*/
+    h1{
+        background-color: brown;
+        /*font-size: 30px;
+        text-align: center;*/
+    }
+}
+
+
+
+@media screen and (min-width:1401px){  /*this is called : media query*/
+    h1{
+        background-color: darkblue;
+        /*font-size: 30px;
+        text-align: center;*/
+    }
+}
+

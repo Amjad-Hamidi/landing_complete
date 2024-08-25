@@ -73,11 +73,27 @@ body{
 
 /*media header*/
 @media screen and (max-width:992px){
-    .nav{   /*display : none => don't reserve place , visibility : hidden => reserve place*/
+    .nav, /*display : none => don't reserve place , visibility : hidden => reserve place*/
+    .auth{  
         display: none; /*تعني لعند 992 ما بتظهر , بعدها بتظهر*/
     }
     .menu{
         display: block;
-        order:2;
+        /*order:2; ما في داعي لانه الثانيات بختفين عند 992 وتحت لذلك الايقونة بتظهر*/
+    }
+    
+}
+
+
+@media screen and (max-width:576px){
+    .container{
+        width:calc(100% - 50px);
+
+    }
+    .header .logo img{ /*مش رح يشتغل .logo img{} موضوع السبيسيفيتي كثير مهم , لو عملنا*/
+        width:20px;
+    }
+    .header .logo a{
+        font-size:14px;
     }
 }

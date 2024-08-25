@@ -98,22 +98,79 @@ body{
     }
 }
 
+.testimonials{
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.testimonials .row{
+    gap:40px;
+
+}
+
+.testimonial{
+    box-shadow: 0px 8.23719596862793px 8.23719596862793px rgba(0, 0, 0, 0.1);/*عشان نعمل ظل*/
+    padding: 20px;
+    box-sizing: border-box;/*ان تجعل البادنج والبوردر ما يزيدو عن الويدث والهاي, بل تجعلهم يتطبقوا على الوديث الاصلي*/
+    width:calc((100% - 40px)/2);
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.user-info{
+    display: flex;
+    gap:15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.user-info img{
+    width:40px;
+    height:40px;
+    border-radius: 50%;/*للتحويل لدائرة*/
+}
+
+.user-data{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.rating{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:768px){
+    .testimonial{
+        width:100%;
+    }
+}
+
 .footer{
     background-color: #393E46;
     color:#fff;
     padding: 50px 0;
 }
 
+/*طريقة اخرى بداية*/
+.footer .row{
+    gap:20px;
+}
+/*طريقة اخرى نهاية*/
 .footer a{
     color: #fff;
 }
 .footer-left-side{
     /*background-color: red;*/
-    width:400px;
+    /*width:400px;*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     gap:20px;
+    width:calc(( 100% - 20px ) / 2);
 }
 
 .footer-left-side .logo{
@@ -136,10 +193,11 @@ body{
 
 .footer-right-side{
     /*background-color: blue;*/
-    flex-grow: 1;/*عشان باقي الويدث للرايت يكون اله ,بعد ما الليفت اخذ 400*/
+    /*flex-grow: 1;*//*عشان باقي الويدث للرايت يكون اله ,بعد ما الليفت اخذ 400*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width:calc(( 100% - 20px ) / 2);
 }
 
 .footer-right-side nav{
@@ -156,7 +214,7 @@ body{
 }
 
 @media screen and (max-width:1200px){
-    
+    /*
     .footer .row{
         gap:10px;
     }
@@ -166,21 +224,51 @@ body{
     .footer-right-side{
         width:100%;
     }
-
+   */
 }
 
 @media screen and (max-width:768px){
+
+    .footer .row{
+        flex-direction: column;
+    }
+    .footer-left-side,
+    .footer-right-side{
+        width: 100%;
+    }
+    .footer-right-side{
+        gap:10px;
+    }
+    .footer-right-side .footer-item{
+        width: calc((100% - 10px)/ 4);
+    }
+
+    /*
   .footer-item{
-    width: 50%; /*عشان بس نوصلها الكلام للفوتر ايتم ما يدخل ببعض ينزل لتحت لانا عاملين فلكس راب = راب*/
-    margin-bottom: 21px;
- }
+    width: 50%; *//*عشان بس نوصلها الكلام للفوتر ايتم ما يدخل ببعض ينزل لتحت لانا عاملين فلكس راب = راب*/
+    /*margin-bottom: 21px;*/
+ /*}*/
 
 }
 
-@media screen and (max-width:400px){
-    .footer-item{
+@media screen and (max-width:576px){
+
+    .footer-right-side{
+        gap:10px;
+    }
+    .footer-left-side p{
+        display: none;
+    }
+    .footer-right-side .footer-item{
+        width: calc((100% - 10px)/3);
+    }
+}
+
+@media screen and (max-width:460px){
+    
+    .footer-right-side .footer-item{
       width: 100%;
-      margin-bottom: 21px;
+      text-align: center;
    }
-  
-  }
+    
+}

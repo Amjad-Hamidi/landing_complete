@@ -1,235 +1,588 @@
 @import './base.css';
 
-body{
+body {
     font-family: var(--mainFont);
-    background-color: #eee; /*لون غامق شوي*/
 }
 
-.menu{
+.menu {
     display: none;
 }
 
-.header{
-    background-color: #fff; /*لون ابيض*/
+.header {
+    background-color: aqua;
     padding: 20px 0;
 }
-.header .logo{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;/*التحكم فيهم بشكل عمودي*/
-    gap:2px;
-}
 
-.header .logo img{
-    width:35px;
-}
-
-.header .logo a{
-    color:var(--mainColor);
-}
-
-.navbar ul{
-    display:flex;
-    flex-wrap: wrap;
-    gap:16px;
-}
-
-.navbar ul li a{
-    color:#101928;
-}
-
-.active{
-    font-weight: 900;
-}
-
-/* افضل active هذا مش افضل حل , نستعمل كلاس اخر اسمه 
-.nav ul li:first-child{
-    font-weight: 900;
-}
-*/
-.auth{
+.header .logo {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap:10px;
+    /*محاذاة بعض بشكل عمودي*/
+    gap: 2px;
 }
 
-.auth a{
+.header .logo img {
+    width: 35px;
+}
+
+.header .logo a {
+    color: var(--mainColor);
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.navbar ul li a {
+    color: #101928;
+}
+
+.active {
+    font-weight: 900;
+}
+
+.auth {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.auth a {
     font-family: var(--subFont);
     border-radius: 10px;
-    padding: 5.3541765213012695px 30.18113136291504px;
+    padding: 5.3541765213012695px 20.18113136291504px;
 }
-.auth .login{
-    border:2px solid var(--mainColor);
+
+.auth .login {
+    border: 2px solid var(--mainColor);
     color: var(--mainColor);
     font-weight: 700;
 }
 
-.auth .register{
-    color:#fff;
+.auth .register {
+    color: #fff;
     background-color: var(--mainColor);
-    border:2px solid var(--mainColor);
-}
-
-/*media header*/
-@media screen and (max-width:992px){
-    .navbar, /*display : none => don't reserve place , visibility : hidden => reserve place*/
-    .auth{  
-        display: none; /*تعني لعند 992 ما بتظهر , بعدها بتظهر*/
-    }
-    .menu{
-        display: block;
-        /*order:2; ما في داعي لانه الثانيات بختفين عند 992 وتحت لذلك الايقونة بتظهر*/
-    }
-    
 }
 
 
-@media screen and (max-width:576px){
-    .container{
-        width:calc(100% - 50px);
 
-    }
-    .header .logo img{ /*مش رح يشتغل .logo img{} موضوع السبيسيفيتي كثير مهم , لو عملنا*/
-        width:20px;
-    }
-    .header .logo a{
-        font-size:14px;
-    }
+.begin{
+    padding: 35px 0px;
 }
 
-.testimonials{
-    padding: 50px 0;
-    background-color: #fff;
+.begin .row{
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
-
-.testimonials .row{
-    gap:40px;
-
+.begin .left{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: calc((100% - 20px) / 2)
 }
-
-.testimonial{
-    box-shadow: 0px 8.23719596862793px 8.23719596862793px rgba(0, 0, 0, 0.1);/*عشان نعمل ظل*/
-    padding: 20px;
-    box-sizing: border-box;/*ان تجعل البادنج والبوردر ما يزيدو عن الويدث والهاي, بل تجعلهم يتطبقوا على الوديث الاصلي*/
-    width:calc((100% - 40px)/2);
+.left .premise{
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
 }
-.user-info{
+
+.left .sign-in{
+    margin-top: 15px;
     display: flex;
-    gap:15px;
     flex-wrap: wrap;
     align-items: center;
+    gap: 10px;
 }
 
-.user-info img{
-    width:40px;
-    height:40px;
-    border-radius: 50%;/*للتحويل لدائرة*/
+.premise p:first-child,
+.left .sign-in{
+    font-family: var(--subFont);
+}
+.premise p:first-child{
+    color: var(--mainColor);
+    width: 20px;
+}
+.premise h1{
+    width: 330px;
+    font-size: 2.9em;
 }
 
-.user-data{
+.premise-img img{
+    width: 400px;
+}
+
+
+.sign-in .play{
     display: flex;
-    flex-direction: column;
-    gap: 6px;
     flex-wrap: wrap;
+    align-items: center;
+    gap: 2px;
 }
-
-.rating{
-    display: flex;
-    gap: 5px;
-    flex-wrap: wrap;
+.play img{
+    width: 23px;
 }
-
-@media screen and (max-width:768px){
-    .testimonial{
-        width:100%;
-    }
-}
-
-.footer{
-    background-color: #393E46;
-    color:#fff;
-    padding: 50px 0;
-}
-
-/*طريقة اخرى بداية*/
-.footer .row{
-    gap:20px;
-}
-/*طريقة اخرى نهاية*/
-.footer a{
+.sign-in .register-btn{
+    background: var(--mainColor);
+    border-radius: 5px;
+    padding: 6px 18px;
     color: #fff;
 }
-.footer-left-side{
-    /*background-color: red;*/
-    /*width:400px;*/
+
+
+
+
+
+
+
+.suggestions{
+    background: #8d8d8d3d;
+    padding: 138px 0px 30px 0px;
+}
+.suggestions .row{
+    align-items: flex-start;
+}
+
+.intro{
+    width: 30%;
+}
+
+.intro p:first-child{
+    color: var(--mainColor);
+}
+
+
+.intro h2{
+    color:#141E32;
+}
+
+.intro p:last-child{
+    color:#969696;
+}
+
+.view{
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap:15px;
+}
+
+
+
+.given{
+    background-color: var(--mainColor);
+    border: 15px solid var(--mainColor);
+    border-radius: 5px;
+    width: 225px;
+}
+
+.given img{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 25px;
+    padding: 3px;
+}
+
+
+.arrows{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.arrows img{
+    width: 30px;
+}
+
+
+.study{
+    color: #fff;
+}
+
+.study .row{
+    background: var(--mainColor);
+    gap: 50px;
+    padding: 15px 62px;
+}
+
+.study-img img{
+    width: 430px;
+}
+
+
+
+.study .study-desc{
+    width: calc((100% - 50px)/2);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap:20px;
-    width:calc(( 100% - 20px ) / 2);
+    gap: 22px;
 }
 
-.footer-left-side .logo{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;/*التحكم فيهم بشكل عمودي*/
-    gap:2px;
-}
-
-.footer-left-side .logo img{
-    width:35px;
-}
-
-.footer-left-side .icons img{
-    border : 1px solid #fff;
-    padding: 10px;
-    width: 20px;
-    height: 20px;
-}
-
-.footer-right-side{
-    /*background-color: blue;*/
-    /*flex-grow: 1;*//*عشان باقي الويدث للرايت يكون اله ,بعد ما الليفت اخذ 400*/
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width:calc(( 100% - 20px ) / 2);
-}
-
-.footer-right-side nav{
+.study .study-info{
     display: flex;
     flex-direction: column;
     gap: 10px;
     flex-wrap: wrap;
 }
 
-.footer-right-side .footer-item{
+.study-info h2{
+    width: 40%;
+}
+.study-info p:last-child{
+    width: 67%;
+}
+
+
+
+.study-statistics h3,
+.study-info p:first-child{
+    color: #f0c932;
+}
+
+.study-statistics,
+.study-info p:first-child{
+   font-family: var(--subFont);
+}
+
+
+
+.study-statistics{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.statistics-item{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+}
+
+
+
+
+.courses{
+    margin-top: 15px;
+}
+
+
+.courses .row{
+    gap:40px;
+}
+
+.courses-items,
+.course-description{
+    width: calc((100% - 40px)/2);
+}
+.courses-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+.course{
+    width: calc((100% - 20px)/2);
+    color:#fff;
+}
+.course-card{
+    position: relative;
+    box-shadow: 6px 8px 10px #ffc9c9;/*الي بتتاثر بس الصورة*/
+    padding: 2px;/*الي بتتاثر بس الصورة*/
+}
+.course-info span:first-of-type{
+    background-color: var(--mainColor);
+    padding: 8px;
+}
+.course-info span:last-of-type{
+    align-self: flex-end;
+}
+.course img{
+    width: 100%;
+    filter: brightness(50%);
+    display: flex; /* course-card لل   box-shadow تعالج مشكلة ال */
+}
+
+.course-info{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: flex-start; /*الناتجة من وضع السبان الاولى stretch بتعالج مشكلة ال */
+}
+
+.course-details{
+    color:#000;
+}
+
+.course-details .row:nth-child(2){
+    justify-content: flex-start;
+}
+
+
+.courses .row:nth-child(1){
+    align-items: flex-start;
+}
+
+
+.course-description{
     display: flex;
     flex-direction: column;
     gap: 14px;
 }
 
-@media screen and (max-width:1200px){
-    /*
-    .footer .row{
-        gap:10px;
-    }
-    .footer-left-side{
-        width:100%;
-    }
-    .footer-right-side{
-        width:100%;
-    }
-   */
+
+
+
+.course-description p:first-of-type{
+    color:var(--mainColor);
+    font-family: var(--subFont);
 }
 
-@media screen and (max-width:768px){
+.course-description h2:first-of-type{
+    width:30%;
+}
 
-    .footer .row{
+.course-description p:last-of-type{
+    width: 60%;
+}
+
+.course-description a{
+    background: var(--mainColor);
+    width: 70px;
+    height: 9px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: var(--subFont);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 9px;
+    text-align: center;
+}
+
+
+
+
+.testimonials{
+    padding: 50px 0;
+    background-color: #fff;
+}
+.testimonials .row{
+    gap:40px;    
+}
+
+.testimonial1{
+    box-shadow: 0px 8.23719596862793px 8.23719596862793px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    width: calc((100% - 40px)/2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative; /* testimonial1  معالجة مشكلة المثلث موقعه في */
+}
+
+.user-info{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.user-info img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-data{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.rating{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+
+.testimonial1::after{
+    content: '';
+    position: absolute;
+    border-top: 40px solid #8c8c8c;
+    border-bottom: 40px solid transparent;
+    /*border-right: 40px solid orange;*/
+    border-left: 40px solid transparent;
+    right: 0;
+    top: 0;
+    
+}
+
+@media screen and (max-width: 768px) {
+   .testimonial1{
+        width: 100%;
+   }
+
+   .course-info span:first-child{
+    width: 30%;
+    font-size: 10px;
+   }
+
+   .study-img{
+        width: 100%;
+   }
+
+
+}
+
+
+.footer {
+    background-color: #393E46;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer .row{
+    gap:20px; /*اذا بمحاها وبخلي الرايت الفلكس جرو واحد والليفت الويدث 400 مع الجاب هاد, بكونوش بسطرين وهاد الي بدي اياه*/
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer-left-side {
+    /*width: 400px;*/
+    width: calc((100% - 20px)/2);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.footer-left-side .logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2px;
+}
+
+.footer-left-side .logo img {
+    width: 35px;
+}
+
+
+.footer-right-side {
+    /*flex-grow: 1;*/
+    width: calc((100% - 20px)/2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer-right-side nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-right-side .footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+   
+    .navbar, /*display : none => don't reserve place , visibility : hidden => reserve place*/
+    .auth{  
+        display: none; 
+    }
+    .menu{
+        display: block;     
+    }
+
+
+   
+    /*
+    .navbar,
+    .auth {
+        display: none;
+    }
+    */
+    /*.menu {*/
+        /*display: block;*/
+        /*order:1;   كنا مستخدمينها وقت ما كنت بدي بس الناف تختفي مش كمان الاوث, عشان اخلي ايقونة البار تيجي اقصى اليمين مشان هيك منحط 1*/
+    /*}*/
+
+}
+
+
+
+@media screen and (max-width: 576px) {
+
+
+
+
+    /*
+    .container {
+        width: calc(100% - 60px);
+    }
+
+    .header .logo img {
+        width: 20px;
+    }
+
+    .header .logo a {
+        font-size: 14px;
+    }
+    */
+}
+
+@media screen and (max-width: 1200px) {
+    /*
+    .footer-left-side {
+        width: 100%;
+    }
+
+    .footer-right-side {
+        width: 100%;
+    }
+
+    .footer .row {
+        gap: 50px;
+    }
+        */
+}
+
+@media screen and (max-width: 768px) {
+    .footer .row {
         flex-direction: column;
     }
     .footer-left-side,
@@ -237,38 +590,62 @@ body{
         width: 100%;
     }
     .footer-right-side{
-        gap:10px;
+        gap: 10px;
     }
-    .footer-right-side .footer-item{
+    .footer-item{
         width: calc((100% - 10px)/ 4);
     }
 
-    /*
-  .footer-item{
-    width: 50%; *//*عشان بس نوصلها الكلام للفوتر ايتم ما يدخل ببعض ينزل لتحت لانا عاملين فلكس راب = راب*/
-    /*margin-bottom: 21px;*/
- /*}*/
+    .given{
+        width: 40%;
+    }
 
+    /*
+    .footer-item {
+        width: 50%;
+        margin-bottom: 21px;
+    }
+    */
 }
 
-@media screen and (max-width:576px){
 
-    .footer-right-side{
-        gap:10px;
-    }
+@media screen and (max-width: 576px) {
+
     .footer-left-side p{
         display: none;
     }
+    .footer-right-side{
+        gap: 10px;
+    }
     .footer-right-side .footer-item{
-        width: calc((100% - 10px)/3);
+        width: calc((100% - 10px)/ 3);
+    }
+
+    .study-img img{
+        width: 100%;
+    }
+
+    .premise-img img{
+        width: 80%;
+    }
+
+    .arrows{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 460px) {
+
+    .footer-right-side .footer-item{
+        width: 100%;
+        text-align: center;
     }
 }
 
-@media screen and (max-width:460px){
-    
-    .footer-right-side .footer-item{
-      width: 100%;
-      text-align: center;
+@media screen and (max-width: 440px) {
+    /*
+   .footer-item{
+    width: 100%;
    }
-    
+    */
 }

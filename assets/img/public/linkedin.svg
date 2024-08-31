@@ -1,21 +1,11 @@
-<svg width="16" height="16" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="1.8728" y="0.425107" width="12.7677" height="12.7677" stroke="white" stroke-width="0.41186"/>
-<g clip-path="url(#clip0_32_156)" filter="url(#filter0_d_32_156)">
-<path d="M6.42487 9.69157V5.52335H5.02694V9.69157H6.42487ZM5.72608 4.95391C6.21357 4.95391 6.517 4.63384 6.517 4.23386C6.50792 3.82486 6.21358 3.51367 5.73533 3.51367C5.25716 3.51367 4.94446 3.82486 4.94446 4.23386C4.94446 4.63386 5.24782 4.95391 5.71696 4.95391H5.72604H5.72608ZM7.19862 9.69157H8.59655V7.36384C8.59655 7.23926 8.60563 7.11481 8.64255 7.02576C8.74361 6.77686 8.97362 6.51906 9.35979 6.51906C9.86564 6.51906 10.068 6.9013 10.068 7.46164V9.69154H11.4659V7.30153C11.4659 6.02121 10.7762 5.4255 9.85644 5.4255C9.10231 5.4255 8.7712 5.84326 8.58725 6.12779H8.59658V5.52327H7.19865C7.21699 5.91439 7.19865 9.69149 7.19865 9.69149L7.19862 9.69157Z" fill="white"/>
+<svg width="16" height="16" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.872815" y="0.425107" width="12.7677" height="12.7677" stroke="white" stroke-width="0.41186"/>
+<g clip-path="url(#clip0_1_154)">
+<path d="M5.42491 9.69157V5.52335H4.02698V9.69157H5.42491ZM4.72613 4.95391C5.21361 4.95391 5.51705 4.63384 5.51705 4.23386C5.50796 3.82486 5.21363 3.51367 4.73538 3.51367C4.2572 3.51367 3.9445 3.82486 3.9445 4.23386C3.9445 4.63386 4.24786 4.95391 4.717 4.95391H4.72608H4.72613ZM6.19866 9.69157H7.5966V7.36384C7.5966 7.23926 7.60568 7.11481 7.64259 7.02576C7.74365 6.77686 7.97367 6.51906 8.35984 6.51906C8.86569 6.51906 9.06806 6.9013 9.06806 7.46164V9.69154H10.4659V7.30153C10.4659 6.02121 9.77624 5.4255 8.85648 5.4255C8.10236 5.4255 7.77124 5.84326 7.58729 6.12779H7.59663V5.52327H6.19869C6.21704 5.91439 6.19869 9.69149 6.19869 9.69149L6.19866 9.69157Z" fill="white"/>
 </g>
 <defs>
-<filter id="filter0_d_32_156" x="0.961731" y="3.51392" width="14.5898" height="14.1779" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_32_156"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_32_156" result="shape"/>
-</filter>
-<clipPath id="clip0_32_156">
-<rect width="6.58976" height="6.1779" fill="white" transform="translate(4.96173 3.51392)"/>
+<clipPath id="clip0_1_154">
+<rect width="6.58976" height="6.1779" fill="white" transform="translate(3.96176 3.51392)"/>
 </clipPath>
 </defs>
 </svg>

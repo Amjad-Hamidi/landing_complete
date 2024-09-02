@@ -1,0 +1,855 @@
+@import './base.css';
+
+body {
+    font-family: var(--mainFont);
+    background-color: #fff;
+}
+
+.menu {
+    display: none;
+}
+
+.header {
+    background-color: #eee;
+    padding: 20px 0;
+}
+
+.header .logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /*محاذاة بعض بشكل عمودي*/
+    gap: 2px;
+}
+
+.header .logo img {
+    width: 35px;
+}
+
+.header .logo a {
+    color: var(--mainColor);
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.navbar ul li a {
+    color: #101928;
+}
+
+.active {
+    font-weight: 900;
+}
+
+.auth {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.auth a {
+    font-family: var(--subFont);
+    border-radius: 10px;
+    padding: 5.3541765213012695px 20.18113136291504px;
+}
+
+.auth .login {
+    border: 2px solid var(--mainColor);
+    color: var(--mainColor);
+    font-weight: 700;
+}
+
+.auth .register {
+    color: #fff;
+    background-color: var(--mainColor);
+}
+
+
+
+.begin {
+    padding: 35px 0px;
+}
+
+.begin .row {
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.begin .left {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: calc((100% - 20px) / 2)
+}
+
+.left .premise {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left .sign-in {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.premise p:first-child,
+.left .sign-in {
+    font-family: var(--subFont);
+}
+
+.premise p:first-child {
+    color: var(--mainColor);
+    width: 20px;
+}
+
+.premise h1 {
+    width: 330px;
+    font-size: 2.9em;
+}
+
+.premise-img img {
+    width: 400px;
+}
+
+
+.sign-in .play {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2px;
+}
+
+.play img {
+    width: 23px;
+}
+
+.sign-in .register-btn {
+    background: var(--mainColor);
+    border-radius: 5px;
+    padding: 6px 18px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+.suggestions {
+    background: #8d8d8d3d;
+    padding: 138px 0px 30px 0px;
+}
+
+.suggestions .row {
+    align-items: flex-start;
+}
+
+.intro {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.intro p:first-child {
+    color: var(--mainColor);
+}
+
+
+.intro h2 {
+    color: #141E32;
+}
+
+.intro p:last-child {
+    color: #969696;
+}
+
+.view {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+
+.given {
+    background-color: var(--mainColor);
+    border: 15px solid var(--mainColor);
+    border-radius: 5px;
+    width: 225px;
+}
+
+.given img {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 25px;
+    padding: 3px;
+}
+
+
+.arrows {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.arrows img {
+    width: 30px;
+}
+
+
+.study {
+    color: #fff;
+}
+
+.study .row {
+    background: var(--mainColor);
+    gap: 50px;
+    padding: 15px 62px;
+}
+
+.study-img img {
+    width: 430px;
+}
+
+
+
+.study .study-desc {
+    width: calc((100% - 50px)/2);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.study .study-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.study-info h2 {
+    width: 40%;
+}
+
+.study-info p:last-child {
+    width: 67%;
+}
+
+
+
+.study-statistics h3,
+.study-info p:first-child {
+    color: #f0c932;
+}
+
+.study-statistics,
+.study-info p:first-child {
+    font-family: var(--subFont);
+}
+
+
+
+.study-statistics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.statistics-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+}
+
+
+
+
+.courses {
+    margin-top: 15px;
+}
+
+
+.courses .row {
+    gap: 40px;
+}
+
+.courses-items,
+.course-description {
+    width: calc((100% - 40px)/2);
+}
+
+.courses-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course {
+    width: calc((100% - 20px)/2);
+    color: #fff;
+}
+
+.course-card {
+    position: relative;
+    box-shadow: 6px 8px 10px #ffc9c9;
+    /*الي بتتاثر بس الصورة*/
+    padding: 2px;
+    /*الي بتتاثر بس الصورة*/
+}
+
+
+
+.course-info span:first-of-type {
+    background-color: var(--mainColor);
+    padding: 8px;
+}
+
+.course-info span:last-of-type {
+    align-self: flex-end;
+}
+
+.course img {
+    width: 100%;
+    filter: brightness(50%);
+    display: flex;
+    /* course-card لل   box-shadow تعالج مشكلة ال */
+}
+
+.course-info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: flex-start;
+    /*الناتجة من وضع السبان الاولى stretch بتعالج مشكلة ال */
+}
+
+.course-details {
+    color: #000;
+}
+
+.course-details .row:nth-child(2) {
+    justify-content: flex-start;
+}
+
+
+
+
+.course-description {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+
+
+.course-description p:first-of-type {
+    color: var(--mainColor);
+    font-family: var(--subFont);
+}
+
+.course-description h2:first-of-type {
+    width: 30%;
+}
+
+.course-description p:last-of-type {
+    width: 60%;
+}
+
+.course-description a {
+    background: var(--mainColor);
+    width: 70px;
+    height: 9px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: var(--subFont);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 9px;
+    text-align: center;
+}
+
+
+
+
+.testimonials {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.testimonials .row {
+    gap: 40px;
+}
+
+.testimonial1 {
+    box-shadow: 0px 8.23719596862793px 8.23719596862793px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    width: calc((100% - 40px)/2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    /* testimonial1  معالجة مشكلة المثلث موقعه في */
+}
+
+.user-info {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-data {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.rating {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+
+.testimonial1::after {
+    content: '';
+    position: absolute;
+    border-top: 40px solid #8c8c8c;
+    border-bottom: 40px solid transparent;
+    /*border-right: 40px solid orange;*/
+    border-left: 40px solid transparent;
+    right: 0;
+    top: 0;
+
+}
+
+
+
+.footer {
+    background-color: #393E46;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer .row {
+    gap: 20px;
+    /*اذا بمحاها وبخلي الرايت الفلكس جرو واحد والليفت الويدث 400 مع الجاب هاد, بكونوش بسطرين وهاد الي بدي اياه*/
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer-left-side {
+    /*width: 400px;*/
+    width: calc((100% - 20px)/2);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.footer-left-side .logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-left-side .logo img {
+    width: 35px;
+}
+
+
+.footer-right-side {
+    /*flex-grow: 1;*/
+    width: calc((100% - 20px)/2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer-right-side nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-right-side .footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+    .course-details .row:nth-child(1) {
+        gap: 5px;
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (max-width: 1292px) {
+
+    .course-details .row:nth-child(1) {
+        gap: 5px;
+        font-size: 13px;
+    }
+
+    .intro {
+        margin: auto;
+        padding-bottom: 20px;
+    }
+
+    .view {
+        justify-content: center;
+    }
+
+    .arrows {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .intro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 1155px) {
+
+
+    .footer-right-side {
+        width: 100%;
+    }
+
+    .footer-left-side {
+        margin: auto;
+    }
+
+    .logo,
+    .icons {
+        margin: auto;
+    }
+
+    .mrg-p {
+        margin-left: 50px;
+    }
+
+    .sz-Photographer {
+        font-size: 15px;
+    }
+
+
+    .study .study-desc {
+        width: 100%;
+    }
+
+    .study-desc .study-info {
+        align-items: center;
+        text-align: center;
+    }
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+    .navbar,
+    /*display : none => don't reserve place , visibility : hidden => reserve place*/
+    .auth {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .courses-items {
+        width: 100%;
+    }
+
+    .course-description {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .course-info span:first-child {
+        width: 25%;
+        font-size: 22px;
+    }
+
+    .course-info span:last-child {
+        width: 25%;
+        font-size: 11px;
+    }
+
+
+    .begin .left {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .premise p:first-child,
+    .premise h1 {
+        width: 100%;
+    }
+
+    .premise-img img {
+        margin-left: 156px;
+    }
+
+    .study-img img {
+        margin-left: 120px;
+    }
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .premise-img img{
+        margin-left: 90px;
+    }
+
+    .study-img img {
+        margin-left: 45px;
+    }
+
+
+
+    .footer .row {
+        flex-direction: column;
+    }
+
+
+
+    .footer-right-side {
+        gap: 12px;
+    }
+
+    .footer-item {
+        width: calc((100% - 10px)/ 4);
+    }
+
+    .given {
+        width: 40%;
+    }
+
+    .footer-left-side,
+    .footer-right-side {
+        width: 67%;
+        margin: auto;
+    }
+
+    .icons {
+        margin: auto;
+    }
+
+    .logo {
+        margin: auto;
+    }
+
+    .gapper {
+        height: 25px;
+    }
+
+    .footer-right-side .footer-item {
+        width: calc((100% - 10px)/ 3);
+    }
+
+
+    .testimonial1 {
+        width: 100%;
+    }
+
+    .course-info span:first-child {
+        width: 17%;
+        font-size: 9px;
+    }
+
+
+    /*
+    .footer-item {
+        width: 50%;
+        margin-bottom: 21px;
+    }
+    */
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .premise-img img {
+        margin-left: 36px;
+    }
+
+    .study-img img {
+        margin-left: -8px;
+    }
+
+
+    .courses-items {
+        width: 100%;
+    }
+
+    .courses .row {
+        gap: 0;
+    }
+
+    .course-description {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .course-info span:first-child {
+        width: 17%;
+        font-size: 9px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 576px) {
+
+    .footer-left-side p {
+        display: none;
+    }
+
+    .footer-right-side {
+        gap: 10px;
+    }
+
+    .footer-right-side .footer-item {
+        width: calc((100% - 10px)/ 3);
+    }
+
+    .study-img img {
+        width: 100%;
+        margin-left: 8px;
+    }
+
+    .premise-img img {
+        width: 80%;
+        margin-left: 15px;
+    }
+
+    .arrows {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+
+    .footer-right-side .footer-item {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 440px) {
+
+
+
+    .course-info span:nth-child(2) {
+        font-size: 10px;
+    }
+
+    .course-info span:first-child {
+        width: 27%;
+        font-size: 9px;
+    }
+
+    .course-details {
+        font-size: 14px;
+    }
+
+    .course-description p:last-of-type {
+        width: 343px;
+    }
+
+    .course-description a {
+        background: var(--mainColor);
+        width: 66px;
+        height: 13px;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-family: var(--subFont);
+        color: #fff;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 9px;
+        text-align: center;
+        margin: auto;
+    }
+
+
+    .courses-items,
+    .course-description {
+        width: 100%;
+    }
+
+    .course-description h2:first-of-type {
+        width: 86%;
+        margin: auto;
+    }
+
+}
